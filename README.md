@@ -44,27 +44,27 @@ The API key is stored as an environment variable: REACT_APP_WEATHER_KEY
 ## Screenshots
 
 ### **App Interface Working**
-![App Working](./public/Screenshots/Screenshot_App_Working.jpeg)
+![App Working](./Screenshots/Screenshot_App_Working.jpeg)
 
 ---
 
 ### **App Interface – Initial State**
-![App Layout](./public/Screenshots/Screenshot_app.jpeg)
+![App Layout](./Screenshots/Screenshot_app.jpeg)
 
 ---
 
 ### **Postman – Success Response**
-![Postman Success](./public/Screenshots/Screenshot_Postman_Success.jpeg)
+![Postman Success](./Screenshots/Screenshot_Postman_Success.jpeg)
 
 ---
 
 ### **Postman – Invalid City Error**
-![Postman Invalid](./public/Screenshots/Screenshot_Postman_Invalid.jpeg)
+![Postman Invalid](./Screenshots/Screenshot_Postman_Invalid.jpeg)
 
 ---
 
 ### **Repository Screenshot**
-![Repository](./public/Screenshots/Screenshot_Repository.jpeg)
+![Repository](./Screenshots/Screenshot_Repository.jpeg)
 
 ---
 

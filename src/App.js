@@ -5,8 +5,23 @@ function App() {
   const [city, setCity] = useState("")
   const [data, setData] = useState(null)
 
-  function search() {
+function search() {
+  if (city.length === 0) {
+    return
   }
+
+  fetch(
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
+      city +
+      "&appid=0a10adc46976dbc8d0b4fcf5a1e0ce3c&units=metric"
+  )
+    .then((res) => res.json())
+    .then((info) => {
+      if (info.cod === 200) {
+        setData(info)
+      }
+    })
+}
 
   return (
     <div className="container">

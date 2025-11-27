@@ -1,71 +1,74 @@
-# Getting Started with Create React App
+# 101485572_comp3123_labtest2 – Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **Student Name:** Breno Lopes Mafra  
+### **Student ID:** 101485572  
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+It is a simple weather application built with React for COMP3123 Lab Test 2. 
+The user can type a city name and the app will display current weather data, 
+temperature in Celsius weather description, weather icon, humidity, wind speed, 
+country and city name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ▶How to Run the Project Locally
 
-### `npm test`
+- Clone the repository: git clone https://github.com/BrenoMafra13/101485572_comp3123_labtest2.git
+- Go to main folder: cd 101485572_comp3123_labtest2
+- Install dependencies: npm install
+- Start the application: npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+The app will open at: http://localhost:3000
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## API Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The application uses the OpenWeatherMap Current Weather API:
 
-### `npm run eject`
+https://api.openweathermap.org/data/2.5/weather
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Query parameters used:
+- `q`: city name  
+- `appid`: API key  
+- `units`: metric  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The API key is stored as an environment variable: REACT_APP_WEATHER_KEY
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+### **App Interface Working**
+![App Working](public/Screenshots/Screenshot_App_Working.jpeg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **App Interface – Initial State**
+![App Layout](public/Screenshots/Screenshot_app.jpeg)
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **Postman – Success Response**
+![Postman Success](public/Screenshots/Screenshot_Postman_Success.jpeg)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Postman – Invalid City Error**
+![Postman Invalid](public/Screenshots/Screenshot_Postman_Invalid.jpeg)
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### **Repository Screenshot**
+![Repository](public/Screenshots/Screenshot_Repository.jpeg)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Notes / Assumptions
+- The project is hosted on Vercel: https://101485572-comp3123-labtest2.vercel.app
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# 101485572_comp3123_labtest2
+- All screenshots (browser + Postman + repository) are included inside the `public/Screenshots/` folder as required.

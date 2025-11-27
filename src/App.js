@@ -1,9 +1,15 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import "./App.css"
 
 function App() {
   const [city, setCity] = useState("")
   const [data, setData] = useState(null)
+
+  useEffect(() => {
+  if (city.length > 0) {
+    localStorage.setItem("lastCity", city)
+  }
+}, [city])
 
 function search() {
   if (city.length === 0) {

@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react"
+import "./App.css"
 
 function App() {
+  const [city, setCity] = useState("")
+  const [data, setData] = useState(null)
+
+  function search() {
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="box">
+        <h1 className="title">Breno Weather App</h1>
+
+        <div className="search-area">
+          <input
+            className="input"
+            type="text"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+            placeholder="Search"
+          />
+          <button className="btn" onClick={search}>Search</button>
+        </div>
+
+        {!data && (
+          <p className="hint">Type a city name</p>
+        )}
+
+        {data && (
+          <div className="result">
+            <h2>{data.name}</h2>
+            <p className="temp">{data.main.temp}°C</p>
+            <p>{data.weather[0].description}</p>
+          </div>
+        )}
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -20,7 +20,7 @@ function App() {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
         city +
-        "&appid=0a10adc46976dbc8d0b4fcf5a1e0ce3c&units=metric"
+        "&appid=" + process.env.REACT_APP_WEATHER_KEY + "&units=metric"
     )
       .then((res) => res.json())
       .then((info) => {
